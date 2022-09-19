@@ -27,6 +27,13 @@ h3 {
 label img {
   width: 250px;
   height: 200px;
+  object-fit: cover;
+
+  transition: all 0.1s;
+}
+label img:hover {
+  opacity: 0.8;
+  filter: blur(1.5px);
 }
 
 .btn {
@@ -38,4 +45,13 @@ label img {
   border: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+.answer:checked + label img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
 }
