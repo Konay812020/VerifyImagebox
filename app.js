@@ -15,7 +15,7 @@ const database = [{
         correctanswer: "b"
     },
     {
-        question: "Choose mountain ?",
+        question: "Choose mountaingit?",
         a: "./img/img/mountain.jpg",
         b: "./img/img/traffic.jpg",
         c: "./img/img/ambulance.jpg",
