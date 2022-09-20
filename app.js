@@ -49,6 +49,7 @@ let score = 0;
 startquestion();
 
 function startquestion() {
+    removeselects();
     const currentqes = database[currentidx];
 
     // console.log("i a m owrking")
@@ -116,5 +117,11 @@ getbtn.addEventListener('click', function () {
         window.alert("Choose one answer")
     }
 });
+
+function removeselects() {
+    getanswers.forEach(function (getanswer) {
+        return getanswer.checked = false;
+    })
+}
 
 // 19BT
