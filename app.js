@@ -101,10 +101,16 @@ getbtn.addEventListener('click', function () {
         if (currentidx < database.length) {
             startquestion();
         } else {
+            getcontainer.innerHTML = `
+            <h3>Total Score : ${score*25}</h3>
+            <h4>Your answered correctly at ${score}/${database.length} questions.</h4>
+
+            <button type="button" class="btn " ondblclick="location.reload()">Click To Reload</button>
+            `
 
         }
 
-        console.log(score);
+        // console.log(score);
 
     } else {
         window.alert("Choose one answer")
